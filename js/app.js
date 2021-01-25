@@ -134,14 +134,7 @@ window.addEventListener('scroll', () => {
 
     let scrollPrecent = ((window.innerHeight + window.scrollY) / document.body.offsetHeight) * 100;
 
-    //Show or hide 'scroll top button'
-    if (scrollPrecent > 40) {
-        //Show
-        goToTopElement.classList.remove('display__none');
-    } else {
-        //Hide
-        goToTopElement.classList.add('display__none');
-    }
+    
 
     //Update Section Active And Menu Link
     document.querySelectorAll('section').forEach(element => {
@@ -167,7 +160,7 @@ section.addNewSection();
 section.addNewSection();
 
 menu.buildMenu();
-goToTop();
+
 
 
 
